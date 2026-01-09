@@ -1,0 +1,155 @@
+.header {
+  height: 100vh;        
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  background: $sage;
+  color: $white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+
+  h1{
+    margin: 1rem;
+    font-weight: 100;
+    font-size: 40px;
+  }
+
+  h2{
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 25px;
+    font-style: italic;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    a {
+      background-color: $darkSage;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: $white;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $white;
+        color: $darkSage;
+      }
+    }
+  }
+
+  .mouse{
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 12px 17px 22px;
+    border: 3px solid white;
+    border-radius: 19px;
+    position: absolute;
+    bottom: 3rem;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+
+  .finger{
+    display: none;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+
+    }
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 20;
+
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $white;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .header{
+    .mouse{
+      display: none;
+    }
+    .finger{
+      display: inline-block;
+      font-size: 50px;
+      position: absolute;
+      bottom: 3rem;
+      animation: bounce 1.5s infinite ease-in-out;
+    }  
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+   .burger {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 4.5rem;
+    right: 2rem;
+    background: $darkSage;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  nav.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .header{
+    ul {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  }
+
+  nav a {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+}
+

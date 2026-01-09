@@ -1,0 +1,121 @@
+#projects {
+    background-color: $sage;
+
+    h2 {
+        color: $white;
+    }
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+
+    .arrow {
+        background-color: $white;
+        border-radius: 100px;
+        padding: 10px;
+        width: 65px;
+        font-size: 40px;
+        color: $darkSage;
+        cursor: pointer;
+    }
+
+    .main-carrousel {
+        background-color: $white;
+        margin: 0 5%;
+        padding: 20px;
+        border-radius: 20px;
+        width: 60%;
+        height: 70%;
+        overflow: hidden; 
+        touch-action: pan-y; // autorise le scroll vertical
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projet-description {
+            width: 50%;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-left: 5%;
+
+            h3 {
+                font-size: 30px;
+                color: $darkSage;
+                padding-top: 5%;
+            }
+
+            p {
+                font-size: 20px;
+                margin-top: 10%;
+                color: $darkSage;
+            }
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: $darkSage;
+                margin-top: auto;
+                padding-bottom: 5%;
+                font-style: italic;
+            }
+        }
+
+        .projet-capture {
+            background-color: $gray;
+            width: 40%;
+            height: 90%;
+            margin-right: 5%;
+            align-self: center;
+            border-radius: 10px;
+        }
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: $white;
+        opacity: 0.5;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
+        &.active {
+            opacity: 1;
+            transform: scale(1.2);
+            background-color: $darkSage;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .carrousel{
+        margin-top: 2rem;
+
+        .arrow {
+            display: none;
+        }
+    }
+  
+}

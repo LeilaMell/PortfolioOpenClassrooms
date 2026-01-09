@@ -1,0 +1,22 @@
+.section {
+  height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  margin: auto;
+  padding: 2rem;
+  text-align: center; 
+
+  h2{
+    color: $darkSage;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .section{
+    min-height: 100vh;
+    height: auto;
+  }
+  
+}

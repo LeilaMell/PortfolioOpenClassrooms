@@ -1,0 +1,27 @@
+#about{
+    background-color: $gray;
+    align-items: baseline;
+    justify-content:start;
+    min-height: 100vh;
+    height: auto;
+
+    h2{
+        margin: 0 auto;
+    }
+}
+
+
+
+.about-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+@media (max-width: 480px){
+    #about{
+        padding: 1rem;
+    }
+}

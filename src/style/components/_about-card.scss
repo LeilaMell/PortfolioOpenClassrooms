@@ -1,0 +1,45 @@
+.about-card{
+    background: linear-gradient(to bottom, $sage, $darkSage);
+    border-radius: 20px;
+    padding: 1rem;
+    margin:  2rem;
+    max-width: 400px;
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 0;
+
+
+        i{
+            padding: 15px;
+            margin-right: 1rem;
+            border-radius: 40px;
+            background-color: $white;
+            color: $sage;
+            font-size: 22px;
+            width: 52px;
+        }
+
+        h3{
+            color: $white;
+            font-size: 30px;
+        }
+
+    }
+
+    
+    p{
+        color: $white;
+        font-size: 22px;
+        font-weight: light;
+        text-align: start;
+    }
+}
+
+@media (max-width: 480px){
+    .about-card{
+        margin: 1rem 0;
+    }
+}
