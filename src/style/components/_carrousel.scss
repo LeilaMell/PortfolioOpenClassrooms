@@ -61,8 +61,13 @@
 
             p {
                 font-size: 20px;
-                margin-top: 10%;
+                margin-top: 5%;
+                margin-right: 10px;
                 color: $darkSage;
+            }
+
+            .context{
+                font-size: 18px;
             }
 
             a {
@@ -82,6 +87,12 @@
             margin-right: 5%;
             align-self: center;
             border-radius: 10px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

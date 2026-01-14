@@ -308,8 +308,12 @@ body {
 }
 .carrousel .main-carrousel .projet-description p {
   font-size: 20px;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-right: 10px;
   color: #7C8965;
+}
+.carrousel .main-carrousel .projet-description .context {
+  font-size: 18px;
 }
 .carrousel .main-carrousel .projet-description a {
   font-size: 20px;
@@ -326,6 +330,12 @@ body {
   margin-right: 5%;
   align-self: center;
   border-radius: 10px;
+}
+.carrousel .main-carrousel .projet-capture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .dots {
