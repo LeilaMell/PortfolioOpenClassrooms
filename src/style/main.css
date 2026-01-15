@@ -307,13 +307,10 @@ body {
   padding-top: 5%;
 }
 .carrousel .main-carrousel .projet-description p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5%;
   margin-right: 10px;
   color: #7C8965;
-}
-.carrousel .main-carrousel .projet-description .context {
-  font-size: 18px;
 }
 .carrousel .main-carrousel .projet-description a {
   font-size: 20px;
@@ -358,12 +355,48 @@ body {
   background-color: #7C8965;
 }
 
+@media (max-width: 1400px) {
+  .carrousel .main-carrousel {
+    width: 75%;
+  }
+}
 @media (max-width: 1024px) {
   .carrousel {
     margin-top: 2rem;
   }
   .carrousel .arrow {
     display: none;
+  }
+  .carrousel .main-carrousel {
+    width: 100%;
+    margin: 2%;
+  }
+}
+@media (max-width: 768px) {
+  .carrousel .main-carrousel .slides .slide {
+    flex-direction: column;
+  }
+  .carrousel .main-carrousel .projet-description {
+    align-self: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 5%;
+    margin-left: 1%;
+  }
+  .carrousel .main-carrousel .projet-description a {
+    margin-top: 10px;
+  }
+  .carrousel .main-carrousel .projet-capture {
+    margin-right: 0;
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .carrousel .main-carrousel .projet-description {
+    margin-left: 2%;
+  }
+  .carrousel .main-carrousel .projet-capture {
+    width: 100%;
   }
 }
 .about-card {
@@ -429,4 +462,10 @@ body {
 }
 .contact-card .text h3 {
   padding-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    margin: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
