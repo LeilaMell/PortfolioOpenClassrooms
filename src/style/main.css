@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #a3b18a;
+  background: #86936e;
   color: #ffffff;
   text-align: center;
   padding: 2rem;
@@ -43,7 +43,7 @@ body {
   margin-top: 5rem;
 }
 .header ul a {
-  background-color: #7C8965;
+  background-color: #626d4e;
   padding: 10px 15px;
   border-radius: 10px;
   color: #ffffff;
@@ -53,7 +53,7 @@ body {
 }
 .header ul a:hover {
   background-color: #ffffff;
-  color: #7C8965;
+  color: #626d4e;
 }
 .header .mouse {
   font-style: normal;
@@ -117,7 +117,7 @@ body {
     position: absolute;
     top: 4.5rem;
     right: 2rem;
-    background: #7C8965;
+    background: #626d4e;
     border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -207,9 +207,16 @@ body {
   height: 150px;
 }
 #contact .form button {
-  background: linear-gradient(to right, #a3b18a, #7C8965);
+  background: linear-gradient(to right, #86936e, #626d4e);
   color: #ffffff;
   margin: 0;
+}
+#contact .hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 @media (max-width: 1024px) {
@@ -233,7 +240,7 @@ body {
   text-align: center;
 }
 .section h2 {
-  color: #7C8965;
+  color: #626d4e;
   font-size: 40px;
 }
 
@@ -256,7 +263,7 @@ body {
 }
 
 #projects {
-  background-color: #a3b18a;
+  background-color: #86936e;
 }
 #projects h2 {
   color: #ffffff;
@@ -275,7 +282,7 @@ body {
   padding: 10px;
   width: 65px;
   font-size: 40px;
-  color: #7C8965;
+  color: #626d4e;
   cursor: pointer;
 }
 .carrousel .main-carrousel {
@@ -308,19 +315,19 @@ body {
 }
 .carrousel .main-carrousel .projet-description h3 {
   font-size: 30px;
-  color: #7C8965;
+  color: #626d4e;
   padding-top: 5%;
 }
 .carrousel .main-carrousel .projet-description p {
   font-size: 18px;
   margin-top: 5%;
   margin-right: 10px;
-  color: #7C8965;
+  color: #626d4e;
 }
 .carrousel .main-carrousel .projet-description a {
   font-size: 20px;
   text-decoration: none;
-  color: #7C8965;
+  color: #626d4e;
   margin-top: auto;
   padding-bottom: 5%;
   font-style: italic;
@@ -357,7 +364,12 @@ body {
 .dots .dot.active {
   opacity: 1;
   transform: scale(1.2);
-  background-color: #7C8965;
+  background-color: #626d4e;
+}
+
+.swipe-hand {
+  display: none;
+  font-size: 30px;
 }
 
 @media (max-width: 1400px) {
@@ -408,7 +420,7 @@ body {
   }
 }
 .about-card {
-  background: linear-gradient(to bottom, #a3b18a, #7C8965);
+  background: linear-gradient(to bottom, #86936e, #626d4e);
   border-radius: 20px;
   padding: 1rem;
   margin: 2rem;
@@ -425,7 +437,7 @@ body {
   margin-right: 1rem;
   border-radius: 40px;
   background-color: #ffffff;
-  color: #a3b18a;
+  color: #86936e;
   font-size: 22px;
   width: 52px;
 }
@@ -448,7 +460,7 @@ body {
 .contact-card {
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #a3b18a, #7C8965);
+  background: linear-gradient(to right, #86936e, #626d4e);
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
@@ -458,7 +470,7 @@ body {
 .contact-card i {
   margin-right: 15px;
   font-size: 20px;
-  color: #7C8965;
+  color: #626d4e;
   padding: 15px;
   background-color: White;
   border-radius: 50px;

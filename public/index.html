@@ -109,6 +109,7 @@
                     <div class="arrow arrow-right">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
+                    <div class="swipe-hand">👆</div>
                 </div>  
                 <div class="dots"></div>
         </section>
@@ -141,10 +142,14 @@
                     </div>
                 </div>
                 <form class="form" action="https://formspree.io/f/xrebqagj" method="POST">
-                    <input type="text" name="name" placeholder="Votre nom" required>
-                    <input type="email" name="email" placeholder="Votre email" required>
-                    <input type="text" name="subject" placeholder="Objet" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
+                    <label for="name" class="hidden">Votre nom</label>
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <label for="email" class="hidden">Votre email</label>
+                    <input type="email" id="email" placeholder="Votre email" required>
+                    <label for="subject" class="hidden">Objet</label>
+                    <input type="text" id="subject" placeholder="Objet" required>
+                    <label for="message" class="hidden">Votre Message</label>
+                    <textarea id="message" placeholder="Message" required></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
             </div>    
