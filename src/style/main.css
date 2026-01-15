@@ -243,6 +243,11 @@ body {
     height: auto;
   }
 }
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 5px;
+  }
+}
 .footer {
   background: #2f2f2f;
   color: #ffffff;
@@ -392,11 +397,14 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .carrousel .main-carrousel {
+    padding: 20px 10px;
+  }
   .carrousel .main-carrousel .projet-description {
     margin-left: 2%;
   }
   .carrousel .main-carrousel .projet-capture {
-    width: 100%;
+    width: 90%;
   }
 }
 .about-card {
@@ -466,6 +474,6 @@ body {
 
 @media (max-width: 480px) {
   .contact-card {
-    margin: 15px;
+    margin: 15px auto;
   }
 }/*# sourceMappingURL=main.css.map */
