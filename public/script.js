@@ -69,10 +69,8 @@ function handleSwipe() {
   // seuil minimum pour éviter les faux swipes
   if (Math.abs(swipeDistance) > 50) {
     if (swipeDistance > 0) {
-      // swipe gauche → slide suivante
       currentIndex = (currentIndex + 1) % totalSlides;
     } else {
-      // swipe droite → slide précédente
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     }
     updateCarousel();
