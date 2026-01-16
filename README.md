@@ -3,7 +3,7 @@ Développeuse front-end junior
 
 Ce portfolio présente mes projets front-end réalisés dans le cadre de ma formation et de projets personnels.
 
-🔗 https://tonpseudo.github.io/portfolio
+🔗 https://leilamell.github.io/PortfolioOpenClassrooms/
 
 ## 🎯 Objectifs
 - Valoriser mes compétences front-end
